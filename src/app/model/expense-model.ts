@@ -1,8 +1,8 @@
 export class ExpenseModel {
     bank:String | undefined;
-	amount: number|any;
-	tags:String[] | undefined;
+	ammount: number|any;
+	tag:String[] | undefined;
 	type:String | undefined;
-	spent_on:String | undefined;
-	created_on:String | undefined
+	spent_on:Date | undefined;
+	created_on:Date | undefined;
 }

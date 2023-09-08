@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { BarServiceService } from './services/bar-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
     NgChartsModule,
     HttpClientModule
   ],
-  providers: [BarServiceService],
+  providers: [
+    BarServiceService,
+    DatePipe,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
